@@ -1,0 +1,29 @@
+<html>
+<body bgcolor="ECECEB">
+<center>
+<img src="{{ url_for('static', filename='inner_banner5.jpg') }}" width="1400" height="222">
+</center>
+
+<div align="center"  id="Track">
+<h1><strong>Welcome.</strong> Please Enter the required credentials for Tracking.</h1>
+<fieldset>
+    <div align="left">
+                <form action="{{url_for('app.home')}}" method="post">
+<p><input type="submit" value="Return to Home Page" onclick="location.href='title.html'"></p>
+    </form>
+        </div>
+<form action="{{url_for('app.user_track')}}" method="post">
+<p><strong>Enter TrackingID:</strong><input type="text" name="tid"></p>
+    <strong>{{ error_message1 }}</strong>
+    <strong>{{ error_message2 }}</strong>
+<p><input type="reset"><input type="submit" value="Track"></p>
+</form>
+        </fieldset>
+</div> 
+
+<div align="center">
+<span class="copyright">&copy Copyright 2015,All Rights Reserved</span>
+</div>
+
+</body>
+</html>

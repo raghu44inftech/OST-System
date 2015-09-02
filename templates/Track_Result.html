@@ -1,0 +1,59 @@
+<html>
+<body bgcolor="ECECEB">
+<center>
+<img src="{{ url_for('static', filename='inner_banner5.jpg') }}" width="1400" height="222">
+</center>
+
+<div align="center"  id="Track">
+<fieldset>
+<div align="left">
+                <p><form action="{{url_for('app.home')}}" method="post">
+<input type="submit" value="Return to Home Page" onclick="location.href='title.html'">
+    </form>
+        </div>
+<div align="right">
+                <form action="{{url_for('app.user')}}" method="post">
+<input type="submit" value="Track Another" >
+    </form></p>
+        </div>
+
+    <table align='center' border=1 cellpadding=3 >
+
+    <tr>
+		  <td align = "center"><h2>TrackingID:</h2></td><td  align = "center"><h4>{{ status[0] }}</h4></td>
+</tr>
+    <tr>
+		  <td align = "center"><h2>ProductID:</h2></td><td  align = "center"><h4>{{ status[1] }}</h4></td>
+</tr>
+    <tr>
+		  <td align = "center"><h2>UserID:</h2></td><td  align = "center"><h4>{{ status[2] }}</h4></td>
+</tr>
+    <tr>
+		  <td align = "center"><h2>Delivery address:</h2></td><td  align = "center"><h4>{{ status[3] }}</h4></td>
+</tr>
+
+    <tr>
+		  <td align = "center"><h2>Delivery status:</h2></td><td  align = "center"><h4>{{ status[4] }}</h4></td>
+</tr>
+    <tr>
+		  <td align = "center"><h2>Phone Number:</h2></td><td  align = "center"><h4>{{ status[5] }}</h4></td>
+</tr>
+    <tr>
+		  <td align = "center"><h2>Email:</h2></td><td  align = "center"><h4>{{ status[6] }}</h4></td>
+</tr>
+    <tr>
+		  <td align = "center"><h2>Ordered Date:</h2></td><td  align = "center"><h4>{{ status[7] }}</h4></td>
+</tr>
+    <tr>
+		  <td align = "center"><h2>Estiamted Del Date:</h2></td><td  align = "center"><h4>{{ status[8] }}</h4></td>
+</tr>
+</table>
+</fieldset>
+</div> 
+
+<div align="center">
+<span class="copyright">&copy Copyright 2015,All Rights Reserved</span>
+</div>
+
+</body>
+</html>

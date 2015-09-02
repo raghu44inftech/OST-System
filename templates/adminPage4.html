@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <body bgcolor="ECECEB"></body>
+    </head>
+
+<img src="{{ url_for('static', filename='inner_banner5.jpg') }}" width="1400" height="222">
+
+<div align="center"  id="Track">
+    <fieldset>
+<div align="left">
+                <p><form action="{{url_for('app.mainpage')}}" method="post">
+<input type="submit" value="Return to Main Page" onclick="location.href='adminPage1.html'">
+    </form>
+            </div>
+<div align="right">
+<form action="{{url_for('app.logout')}}" method="post">
+         <input type="submit" value="LogOut" onclick="location.href='admin_login.html'">
+</form></p>
+</div>
+<form action="javascript:void(0);" method="get">
+
+<div align="center">
+<h1>Sucessfully added</h1>
+</div>
+</form>
+</fieldset>
+</div> 
+
+<div align="center">
+<span class="copyright">&copy Copyright 2015,All Rights Reserved</span>
+</div>
+
+</body>
+</html>

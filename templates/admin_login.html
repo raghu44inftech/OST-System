@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <body bgcolor="ECECEB"></body>
+    </head>
+
+<img src="{{ url_for('static', filename='inner_banner5.jpg') }}" width="1400" height="222">
+
+    <div align="center"  id="Track">
+        <h1><strong>Welcome.</strong> Please login.</h1>
+        <fieldset>
+            <div align="left">
+                <form action="{{url_for('app.home')}}" method="post">
+<p><input type="submit" value="Return to Home Page" onclick="location.href='title.html'"></p>
+    </form>
+            </div>
+        <form action="{{url_for('app.login')}}" method="post">
+                <p><strong>Username:</strong><input type="text" name="un" ></p>
+
+                <p><strong>Password:</strong><input type="password" name="pwd"></p>
+
+                            <strong>{{ error_message1 }}</strong>
+                            <strong>{{ error_message2 }}</strong>
+
+            <p><input type="reset"><input type="submit" name="submit" value="Login"></p>
+                        <strong>{{ password_mailed_confirmation }}</strong>
+
+            <h4>If you have forgot your password,kindly click on forgot password</h4>
+
+        </form>
+
+            <form action="{{url_for('app.forgotpassword')}}" method="post">
+                    <p><input type="submit" value="Forgot Password" onclick="location.href='forgotpassword.html'"></p>
+                </form>
+
+            </fieldset>
+    </div>
+
+    <div align="center">
+        <span class="copyright">&copy Copyright 2015,All Rights Reserved</span>
+    </div>
+
+</body>
+</html>
